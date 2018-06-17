@@ -65,7 +65,7 @@ Version: {__version__}
                 password = getpass('Password: ')
             if not args.dest:
                 args.dest = input(u'Destination: ')
-            g = Github(user, password)
+            g = Github( user, password, base_url="https://github.coecis.cornell.edu/api/v3")
         return g
 
     def clone_main(self):
