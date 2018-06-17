@@ -66,6 +66,7 @@ Version: {__version__}
             if not args.dest:
                 args.dest = input(u'Destination: ')
             g = Github( user, password, base_url="https://github.coecis.cornell.edu/api/v3")
+            """ for full automation, pass --ssh option and ensure that .ssh/config has the right key entry for github.coecis.cornell.edu """
         return g
 
     def clone_main(self):
